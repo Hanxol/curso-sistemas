@@ -1,0 +1,6 @@
+Muy bueno tu trabajo Néstor!!
+Nada que agregar. Detalle nomás, el botón de borrar, se le puede agregar:
+
+<button style="width:100%">
+
+¡Saludos!
