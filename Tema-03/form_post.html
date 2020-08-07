@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario Post</title>
+</head>
+
+<body>
+    <form action="form_post_server.php" method="POST">
+        <table>
+            <tr>
+                <td>
+                    <label>First Name:</label><br>
+                    <input type="text" name="name" placeholder="Enter your first name" required>
+                </td>
+                <td>
+                    <label>Last Name:</label><br>
+                    <input type="text" name="surname" placeholder="Enter your last name" required>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <label>Email:</label><br>
+                    <input type="email" name="email" placeholder="Enter your E-mail" required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Password:</label><br>
+                    <input type="password" name="pass" placeholder="Enter your password" required>
+                </td>
+                <td>
+                    <label>Confirm Password:</label><br>
+                    <input type="password" name="passConfirm" placeholder="Enter your password again" required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Gender: </label><br>
+                    <input type="radio" id="genderRadio0" name="gender" value="Male" required>
+                    <label for="genderRadio0">Male</label>
+                    <input type="radio" id="genderRadio1" name="gender" value="Female">
+                    <label for="genderRadio1">Female</label>
+                </td>
+                <td>
+                    <label>Hobbies</label><br>
+                    <input type="checkbox" id="hobbieCheckBox0" name="hobbie0" value="Music">
+                    <label for="hobbieCheckBox0">Music</label>
+                    <input type="checkbox" id="hobbieCheckBox1" name="hobbie1" value="Sports">
+                    <label for="hobbieCheckBox1">Sports</label>
+                    <input type="checkbox" id="hobbieCheckBox2" name="hobbie2" value="Travel">
+                    <label for="hobbieCheckBox2">Travel</label>
+                    <input type="checkbox" id="hobbieCheckBox3" name="hobbie3" value="Movies">
+                    <label for="hobbieCheckBox3">Movies</label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Source of Income</label><br>
+                    <select name="incomeSource">
+                        <option value="employed">Employed</option>
+                        <option value="rent">Rent</option>
+                        <option value="freelance">freelance</option>
+                    </select>
+                </td>
+                <td>
+                    <label>Income</label><br>
+                    <input type="range" name="income" min="15000" max="100000">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Upload Profile Picture</label><br>
+                    <input type="file" name="profilePic">
+                </td>
+                <td>
+                    <label>Age</label><br>
+                    <input type="number" name="age">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <label>Bio</label><br>
+                    <textarea name="bio" placeholder="Write a little about yourself"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <input type="submit" value="Create">
+                </td>
+            </tr>
+        </table>
+    </form>
+
+</body>
+
+</html>
