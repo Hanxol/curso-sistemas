@@ -1,0 +1,11 @@
+Hola Néstor! ¿Cómo estás?
+
+Tu actividad está muy bien!! 
+El html del form_post.html está bien encaminado y está prolijo.
+Sólo quedaría completarle el elemento de encabezado y el de la parte inferior que contiene el botón crear.
+
+Pero en principio no es necesario hasta este punto de avance de la unidad 3!
+Para la actividad del módulo de CSS, sí habría que considerarlo.
+
+Un abrazo!!
+
