@@ -5,10 +5,7 @@
     $_REQUEST["pass"];
     $_REQUEST["passConfirm"];
     $_REQUEST["age"];
-    //$_REQUEST["hobbieCheckBox0"];
-    //$_REQUEST["hobbieCheckBox1"];
-    //$_REQUEST["hobbieCheckBox2"];
-    //$_REQUEST["hobbieCheckBox3"];
+    $_REQUEST["hobbies"];
     $_REQUEST["gender"];
     $_REQUEST["incomeSource"];
     $_REQUEST["income"];
