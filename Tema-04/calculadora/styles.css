@@ -5,7 +5,13 @@ button{
     margin: auto;
 	font-size:30px;
 	margin-top: 25px;
+	outline: none;
 }
+
+button:active {
+	transform: translateY(12px);
+    box-shadow: 0px 0px;
+  }
 
 .square-button{
 	width: 96px;
