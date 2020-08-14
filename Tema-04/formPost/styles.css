@@ -1,0 +1,15 @@
+.myTable {
+    width: fit-content;
+}
+
+/* Para aclarar... Sabía que se podía usar el "w3-text-teal" para poner el color del texto */
+label {
+    color: lightseagreen;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.inputRange {
+    margin-top: 10px;
+    width: 100%;
+}

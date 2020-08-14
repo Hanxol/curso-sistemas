@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Formulario Post</title>
+</head>
+
+<body>
+    <form action="form_post_server.php" method="POST" enctype="multipart/form-data">
+        <!-- Podría usarse el sistema de 12columnas para que quede mas responsive. Pero creo que habría que usar divs para separar las columnas y que funcione bien -->
+        <table class="myTable w3-table w3-light-grey w3-responsive">
+            <tr>
+                <th colspan="2" class="w3-center w3-gray"><h1><b>Create Account</b></h1></th>
+            </tr>
+            <tr>
+                <td>
+                    <label>First Name *</label><br>
+                    <input class="w3-input w3-border w3-round-large" type="text" name="name" placeholder="Enter your first name" required>
+                </td>
+                <td>
+                    <label>Last Name</label><br>
+                    <input class="w3-input w3-border w3-round-large" type="text" name="surname" placeholder="Enter your last name" required>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <label>Email *</label><br>
+                    <input class="w3-input w3-border w3-round-large" type="email" name="email" placeholder="Enter your E-mail" required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Password *</label><br>
+                    <input class="w3-input w3-border w3-round-large" type="password" name="pass" placeholder="Enter your password" required>
+                </td>
+                <td>
+                    <label>Confirm Password *</label><br>
+                    <input class="w3-input w3-border w3-round-large" type="password" name="passConfirm" placeholder="Enter your password again" required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Gender: </label><br>
+                    <input class="w3-radio" type="radio" id="genderRadio0" name="gender" value="Male" required>
+                    <label for="genderRadio0">Male</label>
+                    <input class="w3-radio" type="radio" id="genderRadio1" name="gender" value="Female">
+                    <label for="genderRadio1">Female</label>
+                </td>
+                <td>
+                    <label>Hobbies</label><br>
+                    <input class="w3-check" type="checkbox" id="hobbieCheckBox0" name="hobbie0" value="Music">
+                    <label for="hobbieCheckBox0">Music</label>
+                    <input class="w3-check" type="checkbox" id="hobbieCheckBox1" name="hobbie1" value="Sports">
+                    <label for="hobbieCheckBox1">Sports</label>
+                    <input class="w3-check" type="checkbox" id="hobbieCheckBox2" name="hobbie2" value="Travel">
+                    <label for="hobbieCheckBox2">Travel</label>
+                    <input class="w3-check" type="checkbox" id="hobbieCheckBox3" name="hobbie3" value="Movies">
+                    <label for="hobbieCheckBox3">Movies</label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Source of Income</label><br>
+                    <select class="w3-select name="incomeSource">
+                        <option value="employed">Employed</option>
+                        <option value="rent">Rent</option>
+                        <option value="freelance">freelance</option>
+                    </select>
+                </td>
+                <td>
+                    <label>Income</label><br>
+                    <input class="inputRange" type="range" name="income" min="15000" max="100000">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Upload Profile Picture</label><br>
+                    <input type="file" name="profilePic">
+                </td>
+                <td>
+                    <label>Age</label><br>
+                    <input class="w3-input w3-border w3-round-large" type="number" name="age">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <label>Bio</label><br>
+                    <textarea class="w3-input w3-border w3-round-large" name="bio" placeholder="Write a little about yourself"></textarea>
+                </td>
+            </tr>
+            <tr class="w3-gray">
+                <td></td>
+                <td class="w3-right">
+                    <input class="w3-btn w3-teal w3-round-large" type="submit" value="Create">
+                </td>
+            </tr>
+        </table>
+    </form>
+
+</body>
+
+</html>
