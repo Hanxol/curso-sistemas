@@ -1,0 +1,16 @@
+Hola Néstor!
+
+Tu trabajo está excelente. El resultado visual y funcional está perfecto!!
+Felicitaciones!!
+
+Sobre tu comentario:
+
+<!-- Podría usarse el sistema de 12columnas para que quede mas responsive. Pero creo que habría que usar divs para separar las columnas y que funcione bien -->
+
+Sí, es una de las maneras de convertirlo en responsive. El framework W3.css ofrece clases para esa metodología de diseño responsive
+https://www.w3schools.com/w3css/w3css_responsive.asp
+
+Si vos tenés ganas y te interesa, para aprender a hacerlo así. Podés experimentar agregando las clases a los elementos,
+y luego lo vemos como queda tu resultado final!! Sin compromiso.
+
+Abrazo!!
