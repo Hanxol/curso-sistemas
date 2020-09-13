@@ -1,13 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Problema 2</title>
     <link href="styles.css" rel="stylesheet">
 </head>
+
 <body>
     <div id="divTable"></div>
+    <br><br>
+    <div>
+        <select onchange="promedioAnual(this.value)">
+            <option disabled selected>-- Seleccione una de las opciones --</option>
+            <option value="1">Temp. máx. abs. (ºC)</option>
+            <option value="2">Temp. máx. media (ºC)</option>
+            <option value="3">Temp. media (ºC)</option>
+            <option value="4">Temp. min. media (ºC)</option>
+            <option value="5">Temp. min. abs (ºC)</option>
+            <option value="6">Precipitación total (mm)</option>
+            <option value="7">Dias de precipitaciones (≥ 0.1 mm)</option>
+            <option value="8">Horas de sol</option>
+            <option value="9">Humedad relativa (%)</option>
+        </select>
+        <p id="selectPromedio"></p>
+    </div>
 </body>
 <script src="main.js"></script>
+
 </html>

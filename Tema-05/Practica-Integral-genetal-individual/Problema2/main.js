@@ -12,6 +12,7 @@ let table =
 	[ "Humedad relativa (%)", 76, 77, 79, 81, 83, 84, 81, 81, 80, 80, 77, 76, 80]
 ];
 
+// Me confundí de actividad y pensé que era esta en la que había que mostrar la tabla
 function makeTable(data){
     let html = "";
     html += "<h1>Parámetros climáticos</h1>"
@@ -58,4 +59,18 @@ function promediosAnuales(tabla) {
     return infoToReturn;
 }
 
+// Usa la funcion para mostrar los promedios de temperatura que pedía la actividad
 console.log(promediosAnuales(table));
+
+// Para practivar y experimentar un poco hice un select para poder ver el promedio de cualquier fila que se seleccione
+function promedioAnual(index) {
+    
+    let promedioAux = 0;
+
+    for (let i = 1; i < table[index].length - 1; i++){
+        promedioAux += table[index][i];
+    }
+    promedioAux = promedioAux/12;
+
+    document.getElementById("selectPromedio").innerHTML = "El promedio anual de " + table[index][0] + " es igual a " + promedioAux;
+}
